@@ -1,0 +1,12 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0f277f2..0508394 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8.8)
+ 
+ set(CMAKE_INCLUDE_CURRENT_DIR ON)
+ set(CMAKE_AUTOMOC TRUE)
++set(CMAKE_LIBRARY_PATH /opt/vc/lib)
+ 
+ include(webOS/webOS)
+ webos_modules_init(1 0 0 QUALIFIER RC3)
