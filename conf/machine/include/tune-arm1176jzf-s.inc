@@ -16,3 +16,7 @@ TUNE_FEATURES_tune-arm1176jzfshf = "${TUNE_FEATURES_tune-arm1176jzfs} callconven
 ARMPKGARCH_tune-arm1176jzfshf = "arm1176jzfs"
 PACKAGE_EXTRA_ARCHS_tune-arm1176jzfshf = "${PACKAGE_EXTRA_ARCHS_tune-armv6hf-vfp} arm1176jzfshf-vfp"
 
+AVAILTUNES += "armv6hf-vfp"
+ARMPKGARCH_tune-armv6hf-vfp ?= "armv6"
+TUNE_FEATURES_tune-armv6hf-vfp ?= "${TUNE_FEATURES_tune-armv6} callconvention-hard"
+PACKAGE_EXTRA_ARCHS_tune-armv6hf-vfp = "${PACKAGE_EXTRA_ARCHS_tune-armv5ehf-vfp} armv6hf-vfp"
