@@ -41,7 +41,7 @@ BOOT_SPACE ?= "20480"
 IMAGE_ROOTFS_ALIGNMENT = "4096"
 
 # Set the default memory split to 90MB for GPU
-GPU_MEM = 90
+GPU_MEM = "90"
 
 # Use an uncompressed ext3 by default as rootfs
 SDIMG_ROOTFS_TYPE ?= "ext3"
