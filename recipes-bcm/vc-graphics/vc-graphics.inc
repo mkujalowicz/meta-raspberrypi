@@ -13,7 +13,6 @@ SRC_URI += " \
     file://glesv2.pc \
     file://glesv1_cm.pc \
     file://vchiq.sh"
-"
 
 S = "${RPIFW_S}/${VCDIR}"
 
@@ -37,6 +36,8 @@ do_install () {
 
   install -d ${D}${libdir}/pkgconfig
   install -m 0644 ${WORKDIR}/egl.pc ${D}${libdir}/pkgconfig/
+  install -m 0644 ${WORKDIR}/glesv2.pc ${D}${libdir}/pkgconfig/
+  install -m 0644 ${WORKDIR}/glesv1_cm.pc ${D}${libdir}/pkgconfig/
 
   install -d ${D}/${sysconfdir}/init.d
   install -m 0755 ${WORKDIR}/vchiq.sh ${D}${sysconfdir}/init.d/
