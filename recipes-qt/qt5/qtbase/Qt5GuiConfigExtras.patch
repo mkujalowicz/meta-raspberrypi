@@ -1,0 +1,13 @@
+diff --git a/src/gui/Qt5GuiConfigExtras.cmake.in b/src/gui/Qt5GuiConfigExtras.cmake.in
+index 75a2385..708b093 100644
+--- a/src/gui/Qt5GuiConfigExtras.cmake.in
++++ b/src/gui/Qt5GuiConfigExtras.cmake.in
+@@ -54,7 +54,7 @@ set(Qt5Gui_OPENGL_LIBRARIES Qt5::Gui_GLESv2)
+ 
+ !!IF !isEmpty(CMAKE_GL_INCDIRS)
+ 
+-set(_GL_INCDIRS $$CMAKE_GL_INCDIRS)
++set(_GL_INCDIRS "/usr/include" $$CMAKE_GL_INCDIRS)
+ find_path(_qt5gui_OPENGL_INCLUDE_DIR $$CMAKE_GL_HEADER_NAME
+     PATHS ${_GL_INCDIRS}
+ !!IF !mac
